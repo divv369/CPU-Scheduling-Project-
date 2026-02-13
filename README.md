@@ -47,5 +47,7 @@ It computes and displays key scheduling metrics including Completion Time, Waiti
 
 ---
 
-## Project Structure
-
+## Project Screenshots
+![Project Screenshot](./cpu%20sceduling/screenshots/demo1.png)
+![Project Screenshot](./cpu%20sceduling/screenshots/demo2.png)
+![Project Screenshot](./cpu%20sceduling/screenshots/demo3.png)
