@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CPU Scheduling Simulator</title>
+  <link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+</head>
+<body>
+
+  <div id="landing">
+
+  <h1>CPU Scheduling Simulator</h1>
+  <p>Select an algorithm to visualize how CPU scheduling works</p>
+
+  <div class="card-container">
+
+    <div class="algo-card" onclick="selectAlgorithm('fcfs')">
+      <h2>FCFS</h2>
+      <p>First Come First Serve</p>
+    </div>
+
+    <div class="algo-card" onclick="selectAlgorithm('sjf')">
+      <h2>SJF</h2>
+      <p>Shortest Job First</p>
+    </div>
+
+    <div class="algo-card" onclick="selectAlgorithm('srtf')">
+      <h2>SRTF</h2>
+      <p>Preemptive SJF</p>
+    </div>
+
+    <div class="algo-card" onclick="selectAlgorithm('rr')">
+      <h2>Round Robin</h2>
+      <p>Time Sharing Algorithm</p>
+    </div>
+
+  </div>
+
+</div>
+
+
+ <div id="simulator">
+
+  <h1>CPU Scheduling Simulator</h1>
+
+  <!-- INPUT SECTION -->
+  <div id="input-section">
+    <h2>Input</h2>
+
+    <label>Number of Processes</label>
+    <input type="number" id="numProcesses">
+    <button onclick="createInputs()">Create</button>
+
+    <div id="processInputs"></div>
+
+    <label>Algorithm</label>
+    <select id="algorithm">
+      <option value="fcfs">FCFS</option>
+      <option value="sjf">SJF</option>
+      <option value="srtf">SRTF</option>
+      <option value="rr">Round Robin</option>
+    </select>
+
+    <label>Time Quantum (RR)</label>
+    <input type="number" id="quantum" value="2">
+
+    <button onclick="runScheduling()">Run Scheduling</button>
+  </div>
+
+  <!-- OUTPUT SECTION -->
+  <div id="output-section">
+    <h2>Gantt Chart</h2>
+    <div id="gantt"></div>
+    
+
+
+    <h2>Results</h2>
+    <div id="output"></div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

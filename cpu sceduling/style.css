@@ -1,0 +1,361 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+label, input, select, button {
+  display: block;
+  margin: 8px 0;
+}
+
+
+#gantt {
+  display: flex;
+  margin: 15px 0;
+}
+
+.gantt-bar {
+  border: 1px solid #333;
+  padding: 8px;
+  text-align: center;
+  font-size: 14px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+input, select, button {
+  margin: 6px 0;
+  padding: 5px;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+#gantt {
+  margin: 10px 0;
+}
+
+/* ---------- Landing Page Layout ---------- */
+
+#landing {
+  min-height: 100vh;
+  padding: 40px;
+  text-align: center;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 700px;
+  margin: 40px auto;
+}
+
+.algo-card {
+  border: 1px solid #ccc;
+  padding: 30px;
+  cursor: pointer;
+}
+
+.algo-card h2 {
+  margin-bottom: 10px;
+}
+
+/* ---------- 3D Card Look ---------- */
+
+.algo-card {
+  background: #ffffff;
+  border-radius: 14px;
+  border: none;
+  box-shadow: 
+    0 10px 20px rgba(0, 0, 0, 0.15),
+    0 6px 6px rgba(0, 0, 0, 0.10);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.algo-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 
+    0 18px 35px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+body {
+  background: linear-gradient(135deg, #eef2f7, #d9e4f5);
+  color: #1f2933;
+}
+
+#landing h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#landing p {
+  font-size: 1.1rem;
+  color: #4b5563;
+}
+.algo-card h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.algo-card p {
+  color: #6b7280;
+  font-size: 1rem;
+}
+.algo-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.algo-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 6px;
+  width: 100%;
+  background: #3b82f6; /* default */
+}
+
+/* Individual colors */
+.algo-card:nth-child(1)::before {
+  background: #2563eb; /* FCFS - Blue */
+}
+
+.algo-card:nth-child(2)::before {
+  background: #16a34a; /* SJF - Green */
+}
+
+.algo-card:nth-child(3)::before {
+  background: #dc2626; /* SRTF - Red */
+}
+
+.algo-card:nth-child(4)::before {
+  background: #9333ea; /* RR - Purple */
+}
+/* ---------- Simulator Page ---------- */
+
+#simulator {
+  padding: 40px;
+}
+
+#simulator h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#input-section, #output-section {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow:
+    0 10px 20px rgba(0,0,0,0.12),
+    0 6px 6px rgba(0,0,0,0.08);
+}
+
+#input-section h2,
+#output-section h2 {
+  margin-bottom: 15px;
+}
+
+#processInputs p {
+  margin: 8px 0;
+}
+
+#input-section button {
+  margin-top: 10px;
+}
+#gantt {
+  height: 250px;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont;
+  background: radial-gradient(
+      circle at top left,
+      #1e3a8a,
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      #9333ea,
+      transparent 40%
+    ),
+    linear-gradient(135deg, #0f172a, #020617);
+  min-height: 100vh;
+  color: #e5e7eb;
+}
+#landing {
+  min-height: 100vh;
+  padding: 60px 20px;
+  text-align: center;
+}
+.algo-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 20px;
+  padding: 32px;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.4),
+    inset 0 0 0 rgba(255, 255, 255, 0.1);
+
+  transition: all 0.35s ease;
+}
+.algo-card:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow:
+    0 35px 70px rgba(0, 0, 0, 0.6),
+    0 0 25px rgba(147, 51, 234, 0.6);
+}
+#landing h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 15px;
+  background: linear-gradient(90deg, #60a5fa, #c084fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#landing p {
+  font-size: 1.15rem;
+  color: #c7d2fe;
+  margin-bottom: 40px;
+}
+.algo-card h2 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #f9fafb;
+}
+
+.algo-card p {
+  font-size: 0.95rem;
+  color: #d1d5db;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
+  gap: 35px;
+  max-width: 850px;
+  margin: 0 auto;
+}
+#simulator {
+  padding: 50px 20px;
+  min-height: 100vh;
+}
+#input-section,
+#output-section {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 22px;
+  padding: 30px;
+  margin-bottom: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  box-shadow:
+    0 25px 50px rgba(0, 0, 0, 0.45);
+}
+#simulator h1 {
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin-bottom: 35px;
+  background: linear-gradient(90deg, #60a5fa, #c084fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#input-section h2,
+#output-section h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #f9fafb;
+}
+label {
+  color: #e5e7eb;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 6px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #f9fafb;
+  outline: none;
+}
+
+input::placeholder {
+  color: #9ca3af;
+}
+
+input:focus,
+select:focus {
+  border-color: #a78bfa;
+  box-shadow: 0 0 0 2px rgba(167, 139, 250, 0.35);
+}
+button {
+  margin-top: 15px;
+  padding: 12px 18px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: #fff;
+
+  background: linear-gradient(90deg, #6366f1, #9333ea);
+  box-shadow: 0 10px 25px rgba(147, 51, 234, 0.5);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 40px rgba(147, 51, 234, 0.7);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  color: #e5e7eb;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+th {
+  font-weight: 700;
+  color: #f9fafb;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+tr:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+#gantt {
+  height: 260px;
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  padding: 10px;
+}
